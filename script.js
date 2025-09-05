@@ -19,11 +19,13 @@ let finalPrice;
 const kmField = document.getElementById("userKm");
 const age = document.getElementById("userAge");
 const button = document.querySelector("button");
+const userNameField = document.getElementById("userName");
 
 //AGGIUNGO AZIONE AL PULSANTE
 button.addEventListener("click", () => {
 const km = Number(kmField.value);
 const ageUser = Number(age.value);
+const nomeUser = (userNameField.value);
 
 //calcolo prezzo totale per adulti
 let totalPrice = priceKm * km; 
@@ -44,7 +46,17 @@ else {
 //OUTPUT 
 finalPrice = totalPrice * (1 - discount / 100);
 console.log(finalPrice);
-});
 
+//inserire più elementi nel dom
+
+//seleziono gli elementi del DOM
+ const nomeRipetizione = document.getElementById("name-repetition");
+ const costoRipetizione = document.getElementById("cost-repetition");
+
+ //inserico il nome 
+
+nomeRipetizione.innerHTML = nomeUser;
+costoRipetizione.innerHTML = finalPrice;
+});
 
 

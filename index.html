@@ -7,18 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <!--nome e cognome-->
-    <label for="age">Nome e cognome:</label>
-    <input type="text" id="userName" name="fullname">
-    <!--età-->
-    <label for="age">Età del passeggero:</label>
-    <input type="number" id="userAge" name="age">
-    <!--km da percorrere-->
-    <label for="age">Km da percorrere:</label>
-    <input type="number" id="userKm" name="km">
-    <!--bottone che genera il prezzo-->
-    <button>GENERA</button>
-    <!---->
+    <!--sezione di calcolo prezzo-->
+    <section>
+        <!--nome e cognome-->
+        <label for="name">Nome e cognome:</label>
+        <input type="text" id="userName" name="fullname">
+        <!--età-->
+        <label for="age">Età del passeggero:</label>
+        <input type="number" id="userAge" name="age">
+        <!--km da percorrere-->
+        <label for="kilometer">Km da percorrere:</label>
+        <input type="number" id="userKm" name="km">
+        <!--bottone che genera il prezzo-->
+        <button>GENERA</button>
+    </section>
+
+    <!--sezione di riepilogo dati utente-->
+    <section>
+        <div>
+            <label>Nome e Cognome</label>
+            <span id="name-repetition"></span>
+            <label>Costo Biglietto</label>
+            <span id="cost-repetition"></span>
+        </div>
+    </section>
 
     <script style="text/javascript" src="./script.js"></script>
 </body>
