@@ -1,0 +1,92 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL RULES */ 
+body {
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   background-color: #23252d;
+}
+
+section {
+    background-color: #264653;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    width: 80%;
+    margin: 120px auto;
+    margin-bottom: 0;
+    min-height: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    color: #E0E0E0;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    background-color: #2A4B63;
+    color: #E0E0E0;
+    height: 25px;
+    min-width: 210px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color:#E09F3E;
+    color: #FFFFFF;
+    border: 1px solid #C6862C;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+label {
+    text-align: center;
+    display: block;
+    color: #B0C4D0;
+}
+
+.main-input-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* sezione riepilogo dati */
+
+.riepilogo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.riepilogo label {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+span {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #E09F3E;
+}
+
+#riepilogo-sec {
+    min-height: 100px;
+    margin-top: 20px;
+}

@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <!--sezione di calcolo prezzo-->
     <section>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <!--nome e cognome-->
-        <label for="name">Nome e cognome:</label>
-        <input type="text" id="userName" name="fullname">
-        <!--età-->
-        <label for="age">Età del passeggero:</label>
-        <input type="number" id="userAge" name="age">
-        <!--km da percorrere-->
-        <label for="kilometer">Km da percorrere:</label>
-        <input type="number" id="userKm" name="km">
+        <div class="main-input-wrapper">
+            <div class="input-item-wrapper">
+                <label for="name">Nome e cognome:</label>
+                <input type="text" id="userName" name="fullname" placeholder="Inserisci nome e cognome">
+            </div>
+            <!--età-->
+            <div class="input-item-wrapper">
+                <label for="age">Età del passeggero:</label>
+                <input type="number" id="userAge" name="age" placeholder="Inserisci la tua età">
+            </div>
+            <!--km da percorrere-->
+            <div class="input-item-wrapper">
+                <label for="kilometer">Km da percorrere:</label>
+                <input type="number" id="userKm" name="km" placeholder="Inserisci il numero di km">
+            </div>
+        </div>
         <!--bottone che genera il prezzo-->
         <button>GENERA</button>
     </section>
 
     <!--sezione di riepilogo dati utente-->
-    <section>
-        <div>
-            <label>Nome e Cognome</label>
-            <span id="name-repetition"></span>
-            <label>Costo Biglietto</label>
-            <span id="cost-repetition"></span>
+    <section id="riepilogo-sec">
+        <div class="riepilogo">
+            <div class="input-item-wrapper">
+                <label>Nome passeggero</label>
+                <span id="name-repetition"></span>
+            </div>
+            <div class="input-item-wrapper">
+                <label>Prezzo Biglietto</label>
+                <span id="cost-repetition"></span>
+            </div>
         </div>
     </section>
 
