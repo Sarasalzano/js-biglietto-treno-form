@@ -45,7 +45,7 @@ else {
 
 //OUTPUT 
 finalPrice = totalPrice * (1 - discount / 100);
-console.log(finalPrice);
+console.log(finalPrice.toFixed(2) +" €");
 
 //inserire più elementi nel dom
 
@@ -56,7 +56,7 @@ console.log(finalPrice);
  //inserico il nome 
 
 nomeRipetizione.innerHTML = nomeUser;
-costoRipetizione.innerHTML = finalPrice;
+costoRipetizione.innerHTML = finalPrice.toFixed(2) +" €";
 });
 
 
